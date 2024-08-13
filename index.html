@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medusa Shorten</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medusa Shorten</h1>
+        <p>Sederhanakan URL Anda dengan mudah</p>
+        
+        <form id="shortenForm">
+            <input type="url" id="urlInput" placeholder="Masukkan URL Anda di sini" required>
+            <button type="submit">Perpendek URL</button>
+        </form>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Memproses...</p>
+        </div>
+
+        <div id="result" class="hidden">
+            <p>URL Pendek Anda:</p>
+            <a id="shortUrl" href="#" target="_blank"></a>
+            <button id="copyButton">Salin URL</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
